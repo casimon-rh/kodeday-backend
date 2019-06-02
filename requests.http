@@ -1,0 +1,19 @@
+GET http://localhost:3000/dogs
+###
+GET http://localhost:3000/dogs/99
+###
+GET http://localhost:3000/
+###
+POST http://localhost:3000/dogs
+content-type: application/json
+
+{
+  "name": "Spot",
+  "age": 2,
+  "breed": "?",
+  "gender": "male"
+}
+###
+DELETE http://localhost:3000/dogs/3
+###
+PUT http://localhost:3000/dogs/adopt/1

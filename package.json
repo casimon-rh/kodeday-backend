@@ -1,0 +1,35 @@
+{
+  "name": "kodeday",
+  "version": "1.0.0",
+  "description": "Kode day",
+  "main": "index.js",
+  "scripts": {
+    "knex": "knex",
+    "migrate:create": "knex migrate:make",
+    "migrate:up": "knex migrate:latest",
+    "migrate:down": "knex migrate:rollback",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "darknesstiller",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "nodemon": "^1.19.1",
+    "prettier": "^1.17.1",
+    "prettier-eslint": "^8.8.2",
+    "prettier-standard": "^9.1.1",
+    "standard": "^12.0.1"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.17.2",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1",
+    "mysql2": "^1.6.5",
+    "objection": "^1.6.9"
+  }
+}
