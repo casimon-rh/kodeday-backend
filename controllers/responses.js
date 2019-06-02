@@ -4,5 +4,8 @@ module.exports = {
   }),
   notFound: (res) => res.status(404).send({
     message: 'Not Found'
+  }),
+  internalError: (res, err) => res.status(404).send({
+    message: err
   })
 }
